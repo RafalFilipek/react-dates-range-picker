@@ -90,13 +90,13 @@ export default class DatePicker extends Component {
 
     return (
       <DayPicker
+        {...this.props}
         numberOfMonths={months}
         initialVisibleMonth={() =>
           moment().subtract(initialVisibleMonth, 'month')
         }
         onDayClick={this.handleDateChange}
         modifiers={createModifiers(this.props)}
-        {...this.props}
       />
     );
   }

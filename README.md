@@ -16,12 +16,14 @@ We all know [react-dates](https://github.com/airbnb/react-dates). I love this li
 ### Installation
 
 ```
-yarn add react-dates-range-picker
+yarn add react-dates-range-picker react-addons-shallow-compare
 
 // or
 
-npm install react-dates-range-picker
+npm install react-dates-range-picker react-addons-shallow-compare
 ```
+
+> `react-addons-shallow-compare` is [required](https://github.com/airbnb/react-dates/blob/0efa2538ede6a37f0a7ba9325595f86df6358587/package.json#L106) by `react-dates`.
 
 ### Usage
 
