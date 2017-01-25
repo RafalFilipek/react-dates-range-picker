@@ -8,6 +8,7 @@ module.exports = {
         "flowtype-errors"
     ],
     "rules": {
-        "flowtype-errors/show-errors": 2
+        "flowtype-errors/show-errors": 2,
+        "react/jsx-filename-extension": 0
     }
 };

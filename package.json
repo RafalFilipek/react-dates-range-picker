@@ -14,7 +14,7 @@
     "clean": "rm -rf lib",
     "prepublish": "npm run clean && npm test && npm run compile"
   },
-   "files": [
+  "files": [
     "*.md",
     "__test__",
     "LICENSE",
@@ -48,7 +48,9 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.22.0",
     "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "enzyme": "^2.7.0",
@@ -61,11 +63,13 @@
     "flow-bin": "^0.37.4",
     "jest": "^18.1.0",
     "publish-please": "^2.2.0",
-    "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
-    "release": "^1.1.2",
-    "styled-components": "^1.2.1"
+    "release": "^1.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.17.1",
+    "react": "^15.4.2",
+    "react-dates": "^4.3.2"
+  }
 }
