@@ -3,18 +3,9 @@ import { DayPicker } from 'react-dates';
 import moment from 'moment';
 
 import createModifiers from './modifiers';
+import SelectTypes from './SelectTypes';
+import MomentShape from './MomentShape';
 
-
-const MomentShape = PropTypes.shape({
-  subtract: PropTypes.func.isRequired,
-  isBefore: PropTypes.func.isRequired,
-  isAfter: PropTypes.func.isRequired,
-  isBetween: PropTypes.func.isRequired,
-  isSame: PropTypes.func.isRequired,
-  isValid: PropTypes.func.isRequired,
-});
-
-export const SelectTypes = { START: 'START', END: 'END' };
 
 export default class DatePicker extends Component {
   static displayName = 'DatePicker';
