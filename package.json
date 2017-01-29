@@ -6,8 +6,9 @@
   "jsnext:main": "src/index.js",
   "module": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:watch": "echo \"Error: no test specified\" && exit 1",
+    "flow": "flow",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "eslint src __test__",
     "compile": "babel -d lib src",
     "compile:watch": "babel -w -d lib src",
@@ -37,6 +38,14 @@
     "date-range",
     "react-dates"
   ],
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "./.coverage",
+    "unmockedModulePathPatterns": [
+      "node_modules/react/",
+      "node_modules/enzyme/"
+    ]
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
@@ -45,14 +54,15 @@
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
-    "enzyme": "^2.7.0",
+    "enzyme": "^2.7.1",
     "eslint": "^3.13.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-flowtype-errors": "^2.0.3",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "flow-bin": "^0.37.4",
+    "flow-bin": "^0.38.0",
+    "flow-typed": "^2.0.0",
     "jest": "^18.1.0",
     "publish-please": "^2.2.0",
     "react-addons-test-utils": "^15.4.2",
@@ -62,6 +72,8 @@
   "dependencies": {
     "moment": "^2.17.1",
     "react": "^15.4.2",
-    "react-dates": "^4.3.2"
+    "react-addons-shallow-compare": "^15.4.2",
+    "react-dates": "^5.2.0",
+    "react-moment-proptypes": "^1.2.1"
   }
 }
