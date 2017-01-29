@@ -12,6 +12,10 @@ We all know [react-dates](https://github.com/airbnb/react-dates). I love this li
 
 > For warriors: check out [DayPickerRangeController](https://github.com/airbnb/react-dates/blob/master/src/components/DayPickerRangeController.jsx).
 
+### TL;DR; Demo
+
+**[https://react-date-range-picker.now.sh/](https://react-date-range-picker.now.sh/)**
+
 
 ### Installation
 
