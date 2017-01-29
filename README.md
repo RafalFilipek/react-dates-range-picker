@@ -104,41 +104,23 @@ class MyView extends React.Component {
 
 ### Props
 
-#### `range`
+**`range`** - `bool` / `false` - select range or single date
 
-`bool` / `false` - select range or single date
+**`months`** - `number` / `1` - number of visible months
 
-#### `months`
+**`initialVisibleMonth`**  - `number` / `0`  - first visible month. `-1` previous, `1` next, etc.
 
-`number` / `1` - number of visible months
+**`onDateSelect`** - `function` / **required** - will be called every time start / end date was changed. For `range={false}` will always set `type='START'`.
 
-#### `initialVisibleMonth`
+**`minDate`** - `moment` / `-Infinity` - min. date that can be selected.
 
-`number` / `0`  - first visible month. `-1` previous, `1` next, etc.
+**`maxDate`** - `moment` / `-Infinity` - max. date that can be selected.
 
-#### `onDateSelect`
+**`modifires`** - `object` / See `Default modifiers` section.
 
-`function` / **required** - will be called every time start / end date was changed. For `range={false}` will always set `type='START'`.
+**`startDate`** - `moment` / `null` - selected start date. When `range={false}` is just selected date.
 
-#### `minDate`
-
-`moment` / `-Infinity` - min. date that can be selected.
-
-#### `maxDate`
-
-`moment` / `-Infinity` - max. date that can be selected.
-
-#### `modifires`
-
-`object` / See `Default modifiers` section.
-
-#### `startDate`
-
-`moment` / `null` - selected start date. When `range={false}` is just selected date.
-
-#### `endDate`
-
-`moment` / `null` - selected end date. When `range={false}` is just selected date.
+**`endDate`** - `moment` / `null` - selected end date. When `range={false}` is just selected date.
 
 ---
 
@@ -152,6 +134,8 @@ class MyView extends React.Component {
 * `selected`
 * `selected-end`
 * `blocked`
+
+---
 
 You can read more about `modifiers`  in [react-dates docs](https://github.com/airbnb/react-dates/).
 
@@ -169,4 +153,3 @@ You can read more about `modifiers`  in [react-dates docs](https://github.com/ai
          2. `{type:'END', null}`
       2. Otherwise `{type:'END', value}`will be sent
 3. If `range` is `false` `{type:'START', value}` will be sent every time date changes.
-

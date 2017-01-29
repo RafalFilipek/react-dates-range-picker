@@ -1,6 +1,6 @@
 {
   "name": "react-dates-range-picker",
-  "version": "v0.0.4",
+  "version": "v0.1.0",
   "description": "Small, stateless date / date range picker for react-dates.",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
